@@ -1,11 +1,19 @@
-# 謝老師數學家教個人網站
+# 謝曜仲｜數學家教與圖論研究網站
 
-這是一個可以直接部署到 GitHub Pages 的靜態網站專案
+這是一個可直接部署到 GitHub Pages 的靜態網站專案  
+內容包含：
+
+- 專業家教首頁
+- 立體數學圖形視覺
+- 教學特色
+- 論文專區
+- 課程方案
+- 聯絡預約區
 
 ## 專案結構
 
 ```txt
-math-tutor-website/
+math-tutor-website-pro/
 ├── index.html
 ├── styles.css
 ├── script.js
@@ -17,28 +25,30 @@ math-tutor-website/
 
 ## 本機預覽
 
-直接用瀏覽器打開 `index.html` 即可
+直接用瀏覽器打開：
 
-也可以用 VS Code 安裝 Live Server 後開啟
+```txt
+index.html
+```
+
+或使用 VS Code 的 Live Server
 
 ## 上架到 GitHub Pages
 
 ### 1. 建立 GitHub Repository
 
-到 GitHub 建立一個新 repository，例如：
+例如建立：
 
 ```txt
 math-tutor-website
 ```
 
-### 2. 把檔案推上 GitHub
-
-在專案資料夾打開終端機，輸入：
+### 2. 推上 GitHub
 
 ```bash
 git init
 git add .
-git commit -m "Initial commit"
+git commit -m "Upgrade professional math tutor website"
 git branch -M main
 git remote add origin https://github.com/你的帳號/math-tutor-website.git
 git push -u origin main
@@ -46,10 +56,10 @@ git push -u origin main
 
 ### 3. 開啟 GitHub Pages
 
-進入 GitHub repository：
+到 GitHub repository：
 
 ```txt
-Settings → Pages → Build and deployment
+Settings → Pages
 ```
 
 設定：
@@ -60,15 +70,23 @@ Branch: main
 Folder: /root
 ```
 
-按 Save
-
-網站網址通常會是：
+網站會出現在：
 
 ```txt
 https://你的帳號.github.io/math-tutor-website/
 ```
 
-## 修改聯絡方式
+## 修改論文連結
+
+在 `index.html` 搜尋：
+
+```txt
+我的論文連結
+```
+
+把該區塊的 `href="https://ndltd.ncl.edu.tw/"` 改成你的正式論文網址
+
+## 修改 Email
 
 在 `index.html` 搜尋：
 
@@ -76,15 +94,4 @@ https://你的帳號.github.io/math-tutor-website/
 handsomeboy784@gmail.com
 ```
 
-即可修改 Email
-
-## 修改圖片
-
-目前網站使用 Unsplash 圖片  
-若要改成本機圖片，可以把圖片放到：
-
-```txt
-assets/
-```
-
-然後在 `styles.css` 裡修改 `.photo-box` 的 `url(...)`
+即可修改
