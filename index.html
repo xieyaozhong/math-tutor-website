@@ -18,11 +18,17 @@
 </head>
 
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="#">
         <span class="brand-mark">∑</span>
-        <span>Yao-Zhong Hsieh</span>
+        <span class="brand-text">
+          <strong>Yao-Zhong Hsieh</strong>
+          <small>Mathematics Education</small>
+        </span>
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
@@ -42,158 +48,176 @@
     <section class="hero">
       <div class="container hero-layout">
         <div class="hero-copy">
-          <p class="kicker">Applied Mathematics · Mathematics Education · Graph Theory</p>
-          <h1>謝曜仲</h1>
-          <p class="subtitle">M.S. in Applied Mathematics</p>
+          <p class="kicker">Applied Mathematics · Graph Theory · Proof Training</p>
+          <h1>
+            謝曜仲
+            <span>Yao-Zhong Hsieh</span>
+          </h1>
+
           <p class="hero-statement">
-            Teaching mathematics through structure, proof, and mathematical thinking.
+            Teaching mathematics through structure, proof, and mathematical thinking
           </p>
+
           <p class="hero-description">
             我專注於數學教學與圖論研究，將抽象定義、解題方法、證明邏輯與圖結構，
             整理成學生可以理解、推理與長期累積的學習系統
           </p>
 
           <div class="hero-actions">
-            <a class="btn primary" href="#teaching">Teaching Profile</a>
-            <a class="btn secondary" href="#research">Research Area</a>
+            <a class="btn primary" href="#teaching">Explore Teaching</a>
+            <a class="btn secondary" href="#research">View Research</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div>
+              <strong>M.S.</strong>
+              <span>Applied Mathematics</span>
+            </div>
+            <div>
+              <strong>Graph</strong>
+              <span>Theory & Labeling</span>
+            </div>
+            <div>
+              <strong>Proof</strong>
+              <span>Mathematical Thinking</span>
+            </div>
           </div>
         </div>
 
-        <aside class="math-panel" aria-label="數學研究視覺區">
-          <div class="panel-label">Graph Labeling Model</div>
-
-          <div class="formula-main">
-            <span>w(v)=f(v)+Σf(e)</span>
-            <small>vertex weight under totally graceful labeling</small>
+        <aside class="math-visual" aria-label="數學研究視覺">
+          <div class="visual-header">
+            <span>Graph Labeling System</span>
+            <small>Totally Graceful Labeling</small>
           </div>
 
-          <svg class="graph-svg" viewBox="0 0 460 340" role="img" aria-label="圖論標號示意圖">
+          <div class="formula-card">
+            <code>w(v)=f(v)+Σf(e)</code>
+            <p>Vertex weight is induced by vertex and incident edge labels</p>
+          </div>
+
+          <div class="orbit orbit-a"></div>
+          <div class="orbit orbit-b"></div>
+
+          <svg class="graph-svg" viewBox="0 0 500 380" role="img" aria-label="圖論標號示意圖">
             <defs>
+              <linearGradient id="nodeGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#dbeafe"/>
+              </linearGradient>
               <filter id="nodeShadow" x="-40%" y="-40%" width="180%" height="180%">
-                <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.18"/>
+                <feDropShadow dx="0" dy="12" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.22"/>
               </filter>
             </defs>
 
             <g class="edges">
-              <line x1="90" y1="95" x2="230" y2="55"/>
-              <line x1="230" y1="55" x2="370" y2="95"/>
-              <line x1="370" y1="95" x2="340" y2="245"/>
-              <line x1="340" y1="245" x2="120" y2="245"/>
-              <line x1="120" y1="245" x2="90" y2="95"/>
-              <line x1="90" y1="95" x2="340" y2="245"/>
-              <line x1="370" y1="95" x2="120" y2="245"/>
-              <line x1="230" y1="55" x2="230" y2="175"/>
-              <line x1="230" y1="175" x2="120" y2="245"/>
-              <line x1="230" y1="175" x2="340" y2="245"/>
+              <line x1="95" y1="105" x2="250" y2="58"/>
+              <line x1="250" y1="58" x2="405" y2="105"/>
+              <line x1="405" y1="105" x2="365" y2="280"/>
+              <line x1="365" y1="280" x2="135" y2="280"/>
+              <line x1="135" y1="280" x2="95" y2="105"/>
+              <line x1="95" y1="105" x2="365" y2="280"/>
+              <line x1="405" y1="105" x2="135" y2="280"/>
+              <line x1="250" y1="58" x2="250" y2="190"/>
+              <line x1="250" y1="190" x2="135" y2="280"/>
+              <line x1="250" y1="190" x2="365" y2="280"/>
             </g>
 
             <g class="edge-labels">
-              <text x="150" y="60">8</text>
-              <text x="305" y="60">9</text>
-              <text x="375" y="170">10</text>
-              <text x="230" y="270">11</text>
-              <text x="86" y="170">12</text>
-              <text x="210" y="188">13</text>
-              <text x="280" y="188">14</text>
+              <text x="168" y="66">8</text>
+              <text x="332" y="66">9</text>
+              <text x="415" y="190">10</text>
+              <text x="250" y="306">11</text>
+              <text x="88" y="190">12</text>
+              <text x="214" y="212">13</text>
+              <text x="292" y="212">14</text>
             </g>
 
             <g class="nodes" filter="url(#nodeShadow)">
-              <circle cx="90" cy="95" r="25"/>
-              <circle cx="230" cy="55" r="25"/>
-              <circle cx="370" cy="95" r="25"/>
-              <circle cx="340" cy="245" r="25"/>
-              <circle cx="120" cy="245" r="25"/>
-              <circle cx="230" cy="175" r="25"/>
+              <circle cx="95" cy="105" r="28"/>
+              <circle cx="250" cy="58" r="28"/>
+              <circle cx="405" cy="105" r="28"/>
+              <circle cx="365" cy="280" r="28"/>
+              <circle cx="135" cy="280" r="28"/>
+              <circle cx="250" cy="190" r="28"/>
             </g>
 
             <g class="node-labels">
-              <text x="90" y="95">1</text>
-              <text x="230" y="55">2</text>
-              <text x="370" y="95">3</text>
-              <text x="340" y="245">4</text>
-              <text x="120" y="245">5</text>
-              <text x="230" y="175">6</text>
+              <text x="95" y="105">1</text>
+              <text x="250" y="58">2</text>
+              <text x="405" y="105">3</text>
+              <text x="365" y="280">4</text>
+              <text x="135" y="280">5</text>
+              <text x="250" y="190">6</text>
             </g>
 
             <g class="weight-labels">
-              <text x="42" y="72">w=21</text>
-              <text x="203" y="22">w=32</text>
-              <text x="372" y="72">w=22</text>
-              <text x="340" y="294">w=39</text>
-              <text x="62" y="294">w=28</text>
-              <text x="250" y="163">w=33</text>
+              <text x="45" y="80">w=21</text>
+              <text x="220" y="24">w=32</text>
+              <text x="407" y="80">w=22</text>
+              <text x="366" y="332">w=39</text>
+              <text x="75" y="332">w=28</text>
+              <text x="274" y="178">w=33</text>
             </g>
           </svg>
 
-          <div class="structure-tags">
-            <span>C<sub>n</sub></span>
-            <span>Trees</span>
-            <span>Labeling</span>
-            <span>Proof</span>
+          <div class="visual-tags">
+            <span>Cycle Graphs</span>
+            <span>Graph Labeling</span>
+            <span>Discrete Math</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section id="teaching" class="section white">
+    <section id="teaching" class="section">
       <div class="container">
         <div class="section-heading">
-          <p>Teaching</p>
-          <h2>Mathematics Teaching Strength</h2>
-          <span>教學核心不是背答案，而是建立數學結構、判斷能力與證明思維</span>
+          <p>Teaching Strength</p>
+          <h2>數學教學硬實力</h2>
+          <span>從觀念、題型、錯因、證明到學術銜接，建立可累積的數學能力</span>
         </div>
 
-        <div class="cards three">
-          <article class="card">
+        <div class="feature-grid">
+          <article class="feature-card large">
             <span class="index">01</span>
             <h3>Concept Structure</h3>
-            <p>將每一章整理成定義、性質、例題、題型與常見錯誤，讓學生知道每個步驟的數學意義</p>
+            <p>將每一章整理成「定義 → 性質 → 例題 → 題型 → 易錯點」的學習路徑，讓學生知道每個步驟的數學意義</p>
           </article>
 
-          <article class="card">
+          <article class="feature-card">
             <span class="index">02</span>
             <h3>Problem Modeling</h3>
-            <p>訓練學生把題目轉換成條件辨識、方法選擇、代數操作與結果驗證，而不是只模仿解法</p>
+            <p>訓練學生把題目轉換成條件辨識、方法選擇、代數操作與結果驗證</p>
           </article>
 
-          <article class="card">
+          <article class="feature-card">
             <span class="index">03</span>
             <h3>Proof Training</h3>
-            <p>針對進階學生訓練定義使用、反例建構、數學歸納法、存在唯一性與嚴謹推理</p>
+            <p>訓練定義使用、反例建構、歸納法、存在唯一性與嚴謹推理</p>
           </article>
 
-          <article class="card">
+          <article class="feature-card">
             <span class="index">04</span>
             <h3>Visual Reasoning</h3>
-            <p>用圖像化方式處理函數、向量、矩陣、極限與圖論結構，降低抽象概念的理解門檻</p>
+            <p>用圖像化方式處理函數、向量、矩陣、極限與圖論結構</p>
           </article>
 
-          <article class="card">
+          <article class="feature-card wide">
             <span class="index">05</span>
             <h3>Error Diagnosis</h3>
             <p>區分學生錯誤來自觀念、運算、題意、符號、邏輯或考試節奏，建立可追蹤的修正方向</p>
-          </article>
-
-          <article class="card">
-            <span class="index">06</span>
-            <h3>Academic Transition</h3>
-            <p>協助學生從高中數學銜接微積分、線性代數、離散數學與圖論，建立長期數學能力</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="research" class="section muted">
+    <section id="research" class="section research-section">
       <div class="container research-layout">
-        <div>
-          <div class="section-heading left">
-            <p>Research</p>
-            <h2>Graph Theory & Labeling</h2>
-            <span>研究方向聚焦於圖論標號問題與圖結構分析</span>
-          </div>
-
-          <p class="research-text">
-            圖論研究訓練的是結構觀察、定義操作、案例建構與嚴謹證明。
+        <div class="research-copy">
+          <p class="kicker">Research</p>
+          <h2>Graph Theory & Labeling</h2>
+          <p>
+            圖論研究訓練的是結構觀察、定義操作、案例建構與嚴謹證明
             這些能力也能直接轉化為數學教學中的邏輯訓練與解題能力培養
           </p>
 
@@ -214,7 +238,7 @@
         </div>
 
         <div class="proof-board">
-          <h3>Research Formula</h3>
+          <div class="proof-title">Research Formula</div>
           <div class="proof-line">
             <span>Graph</span>
             <code>G=(V,E)</code>
@@ -235,21 +259,22 @@
       </div>
     </section>
 
-    <section id="publications" class="section white">
+    <section id="publications" class="section">
       <div class="container">
         <div class="section-heading">
           <p>Publications</p>
           <h2>論文與研究成果</h2>
-          <span>此區可放碩士論文、研究筆記、投稿文章或公開講義</span>
+          <span>展示碩士論文、研究筆記、投稿文章或公開講義</span>
         </div>
 
         <article class="publication-card">
-          <div class="pub-year">Thesis</div>
-          <div class="pub-content">
+          <div class="pub-aside">
+            <span>Thesis</span>
+            <strong>Graph Theory</strong>
+          </div>
+          <div class="pub-main">
             <h3>Totally Graceful Labeling of Graphs</h3>
-            <p>
-              研究圖的點標號、邊標號與權重連續性問題，並針對特定圖族進行構造與證明分析
-            </p>
+            <p>研究圖的點標號、邊標號與權重連續性問題，並針對特定圖族進行構造與證明分析</p>
 
             <div class="pub-meta">
               <span>Field: Graph Theory</span>
@@ -266,34 +291,38 @@
       </div>
     </section>
 
-    <section id="materials" class="section muted">
+    <section id="materials" class="section materials-section">
       <div class="container">
         <div class="section-heading">
           <p>Materials</p>
           <h2>Teaching Materials & Mathematical Notes</h2>
-          <span>展示講義、研究筆記與數學作品，強化教學與學術可信度</span>
+          <span>講義、研究筆記與數學作品能強化教學與學術可信度</span>
         </div>
 
-        <div class="cards four">
+        <div class="material-grid">
           <article class="material-card">
+            <span>01</span>
             <h3>Calculus Notes</h3>
             <p>極限、導數、積分、級數與 ε-δ 定義</p>
             <a href="#">Coming Soon</a>
           </article>
 
           <article class="material-card">
+            <span>02</span>
             <h3>Linear Algebra Notes</h3>
             <p>矩陣、向量空間、線性轉換、特徵值與對角化</p>
             <a href="#">Coming Soon</a>
           </article>
 
           <article class="material-card">
+            <span>03</span>
             <h3>Graph Theory Notes</h3>
             <p>圖結構、路徑、圈圖、樹、標號與組合構造</p>
             <a href="#">Coming Soon</a>
           </article>
 
           <article class="material-card">
+            <span>04</span>
             <h3>Proof Training</h3>
             <p>定義操作、反例、歸納法、存在性與唯一性證明</p>
             <a href="#">Coming Soon</a>
@@ -302,17 +331,15 @@
       </div>
     </section>
 
-    <section id="cv" class="section white">
+    <section id="cv" class="section">
       <div class="container cv-layout">
         <div>
-          <div class="section-heading left">
-            <p>Curriculum Vitae</p>
-            <h2>Academic Profile</h2>
-            <span>以數學教學與學術能力為核心的個人履歷摘要</span>
-          </div>
+          <p class="kicker">Curriculum Vitae</p>
+          <h2>Academic Profile</h2>
+          <p class="cv-intro">以數學教學與學術能力為核心的個人履歷摘要</p>
         </div>
 
-        <div class="cv-table">
+        <div class="cv-list">
           <div>
             <strong>Education</strong>
             <span>M.S. in Applied Mathematics</span>
@@ -351,7 +378,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">© 2026 Yao-Zhong Hsieh. Mathematics Education & Graph Theory.</div>
+    <div class="container">© 2026 Yao-Zhong Hsieh · Mathematics Education & Graph Theory</div>
   </footer>
 
   <script src="script.js"></script>
