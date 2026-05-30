@@ -1,0 +1,10 @@
+# 系統檔案
+.DS_Store
+Thumbs.db
+
+# 編輯器
+.vscode/
+.idea/
+
+# 暫存
+*.log
