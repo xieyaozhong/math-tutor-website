@@ -1,24 +1,68 @@
-# 謝曜仲｜數學教學與圖論研究網站
+# Yao-Zhong Hsieh Mathematics Website
 
-這版專門強化數學教學硬實力、學術能力展示、圖論與論文研究、講義與數學作品區。
+GitHub Pages 靜態網站專案
 
-## 上架 GitHub Pages
+主軸：
+
+- Mathematics Education
+- Graph Theory
+- Graph Labeling
+- Publications
+- Teaching Materials
+- Academic CV
+
+## Structure
+
+```txt
+math-tutor-website-upgraded/
+├── index.html
+├── styles.css
+├── script.js
+├── assets/
+│   └── favicon.svg
+├── README.md
+└── .gitignore
+```
+
+## Deploy to GitHub Pages
 
 ```bash
 git init
 git add .
-git commit -m "Build academic math teaching website"
+git commit -m "Upgrade academic mathematics website"
 git branch -M main
-git remote add origin https://github.com/你的帳號/math-tutor-academic-website.git
+git remote add origin https://github.com/xieyaozhong/math-tutor-website.git
 git push -u origin main
 ```
 
-GitHub → Settings → Pages → Deploy from a branch → main → /root
+Then open GitHub:
 
-## 修改論文連結
+```txt
+Settings → Pages → Deploy from a branch → main → /root
+```
 
-在 `index.html` 搜尋 `論文連結`，把 `href="https://ndltd.ncl.edu.tw/"` 改成正式論文網址
+## Replace thesis link
 
-## 修改講義連結
+In `index.html`, search:
 
-在 `index.html` 搜尋 `Coming Soon`，改成 PDF、Google Drive、GitHub 或 Notion 連結
+```txt
+Thesis Link
+```
+
+Replace this URL:
+
+```txt
+https://ndltd.ncl.edu.tw/
+```
+
+with your official thesis URL
+
+## Replace material links
+
+In `index.html`, search:
+
+```txt
+Coming Soon
+```
+
+Replace `href="#"` with PDF, GitHub, Google Drive, or Notion links
