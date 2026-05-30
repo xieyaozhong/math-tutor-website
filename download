@@ -1,10 +1,8 @@
-# 系統檔案
+# System
 .DS_Store
 Thumbs.db
-
-# 編輯器
+# Editor
 .vscode/
 .idea/
-
-# 暫存
+# Logs
 *.log

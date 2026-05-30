@@ -1,97 +1,24 @@
-# 謝曜仲｜數學家教與圖論研究網站
+# 謝曜仲｜數學教學與圖論研究網站
 
-這是一個可直接部署到 GitHub Pages 的靜態網站專案  
-內容包含：
+這版專門強化數學教學硬實力、學術能力展示、圖論與論文研究、講義與數學作品區。
 
-- 專業家教首頁
-- 立體數學圖形視覺
-- 教學特色
-- 論文專區
-- 課程方案
-- 聯絡預約區
-
-## 專案結構
-
-```txt
-math-tutor-website-pro/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   └── favicon.svg
-├── README.md
-└── .gitignore
-```
-
-## 本機預覽
-
-直接用瀏覽器打開：
-
-```txt
-index.html
-```
-
-或使用 VS Code 的 Live Server
-
-## 上架到 GitHub Pages
-
-### 1. 建立 GitHub Repository
-
-例如建立：
-
-```txt
-math-tutor-website
-```
-
-### 2. 推上 GitHub
+## 上架 GitHub Pages
 
 ```bash
 git init
 git add .
-git commit -m "Upgrade professional math tutor website"
+git commit -m "Build academic math teaching website"
 git branch -M main
-git remote add origin https://github.com/你的帳號/math-tutor-website.git
+git remote add origin https://github.com/你的帳號/math-tutor-academic-website.git
 git push -u origin main
 ```
 
-### 3. 開啟 GitHub Pages
-
-到 GitHub repository：
-
-```txt
-Settings → Pages
-```
-
-設定：
-
-```txt
-Source: Deploy from a branch
-Branch: main
-Folder: /root
-```
-
-網站會出現在：
-
-```txt
-https://你的帳號.github.io/math-tutor-website/
-```
+GitHub → Settings → Pages → Deploy from a branch → main → /root
 
 ## 修改論文連結
 
-在 `index.html` 搜尋：
+在 `index.html` 搜尋 `論文連結`，把 `href="https://ndltd.ncl.edu.tw/"` 改成正式論文網址
 
-```txt
-我的論文連結
-```
+## 修改講義連結
 
-把該區塊的 `href="https://ndltd.ncl.edu.tw/"` 改成你的正式論文網址
-
-## 修改 Email
-
-在 `index.html` 搜尋：
-
-```txt
-handsomeboy784@gmail.com
-```
-
-即可修改
+在 `index.html` 搜尋 `Coming Soon`，改成 PDF、Google Drive、GitHub 或 Notion 連結

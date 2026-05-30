@@ -3,336 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>謝曜仲｜數學家教與圖論研究</title>
-  <meta name="description" content="謝曜仲數學家教個人網站，提供國中、高中、大學數學教學，並展示圖論、優美標號與數學論文研究專區" />
-  <meta name="keywords" content="數學家教, 台中數學家教, 高中數學, 國中數學, 微積分, 線性代數, 圖論, 優美標號, 謝曜仲" />
+  <title>謝曜仲｜數學教學與圖論研究</title>
+  <meta name="description" content="謝曜仲數學教學與學術個人網站，聚焦數學教學、圖論研究、微積分、線性代數、離散數學與數學證明訓練" />
+  <meta name="keywords" content="數學教學, 數學家教, 圖論, 優美標號, 微積分, 線性代數, 離散數學, 數學證明" />
   <meta name="author" content="謝曜仲" />
-
-  <meta property="og:title" content="謝曜仲｜數學家教與圖論研究" />
-  <meta property="og:description" content="專業數學家教，從觀念補強到考試衝刺，並展示圖論與優美標號研究成果" />
-  <meta property="og:type" content="website" />
-
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-glow page-glow-1"></div>
-  <div class="page-glow page-glow-2"></div>
-
-  <header>
+  <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#">
-        <span class="logo-mark">∑</span>
-        <span>謝曜仲 Math Studio</span>
-      </a>
-
+      <a class="brand" href="#"><span class="brand-mark">∑</span><span>謝曜仲｜Mathematics</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="開啟選單">☰</button>
-
       <nav class="nav-links" id="navLinks">
-        <a href="#about">關於我</a>
-        <a href="#features">教學特色</a>
-        <a href="#research">論文專區</a>
-        <a href="#plans">課程方案</a>
-        <a href="#contact">聯絡</a>
+        <a href="#teaching">數學教學</a><a href="#academic">學術能力</a><a href="#research">研究與論文</a><a href="#materials">講義與作品</a><a href="#contact">聯絡</a>
       </nav>
     </div>
   </header>
-
   <main>
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="badge">Mathematics Tutor ｜ Graph Theory Research</span>
-          <h1>用數學結構，建立真正會思考的解題能力</h1>
-          <p>
-            我是謝曜仲，應用數學背景，專長於國高中數學、大學微積分、線性代數與圖論研究。
-            教學不只追求答案，而是把觀念、題型、推理與證明拆成學生能吸收的結構
-          </p>
-
-          <div class="buttons">
-            <a class="btn btn-primary" href="#contact">預約試教</a>
-            <a class="btn btn-secondary" href="#research">查看論文專區</a>
-          </div>
-
-          <div class="hero-trust">
-            <div>
-              <strong>Applied Math</strong>
-              <span>應用數學背景</span>
-            </div>
-            <div>
-              <strong>Graph Theory</strong>
-              <span>圖論研究方向</span>
-            </div>
-            <div>
-              <strong>1-on-1</strong>
-              <span>客製化教學</span>
-            </div>
-          </div>
+          <p class="eyebrow">Mathematics Education · Graph Theory · Proof Training</p>
+          <h1>用學術級的數學結構，提升真正的解題能力</h1>
+          <p class="hero-text">我專注於數學教學與學術訓練，將抽象概念、題型策略、證明方法與圖論研究，轉化成學生能理解、能推理、能應用的完整學習系統</p>
+          <div class="hero-actions"><a class="btn primary" href="#teaching">查看教學系統</a><a class="btn secondary" href="#research">查看研究方向</a></div>
+          <div class="academic-line"><span>Applied Mathematics</span><span>Calculus</span><span>Linear Algebra</span><span>Graph Theory</span></div>
         </div>
-
-        <div class="math-stage" aria-label="立體數學圖形展示">
-          <div class="formula-chip chip-1">f : V(G) → ℤ</div>
-          <div class="formula-chip chip-2">w(v)=f(v)+Σf(e)</div>
-          <div class="formula-chip chip-3">C<sub>n</sub>｜Graph Labeling</div>
-
-          <div class="orbital orbital-1"></div>
-          <div class="orbital orbital-2"></div>
-
-          <svg class="math-polyhedron" viewBox="0 0 420 420" role="img" aria-label="立體多面體數學圖形">
-            <defs>
-              <linearGradient id="faceA" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.85"/>
-                <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.22"/>
-              </linearGradient>
-              <linearGradient id="faceB" x1="1" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.72"/>
-                <stop offset="100%" stop-color="#2563eb" stop-opacity="0.18"/>
-              </linearGradient>
-              <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-                <feDropShadow dx="0" dy="22" stdDeviation="16" flood-color="#1e3a8a" flood-opacity="0.26"/>
-              </filter>
-            </defs>
-
-            <g filter="url(#shadow)">
-              <polygon points="210,42 350,130 322,300 210,378 98,300 70,130" fill="url(#faceA)" stroke="#bfdbfe" stroke-width="2"/>
-              <polygon points="210,42 350,130 210,208 70,130" fill="url(#faceB)" stroke="#dbeafe" stroke-width="2"/>
-              <polygon points="70,130 210,208 210,378 98,300" fill="#2563eb" opacity="0.16" stroke="#bfdbfe" stroke-width="2"/>
-              <polygon points="350,130 210,208 210,378 322,300" fill="#0ea5e9" opacity="0.20" stroke="#bfdbfe" stroke-width="2"/>
-              <line x1="210" y1="42" x2="210" y2="378" stroke="#eff6ff" stroke-width="2" opacity="0.8"/>
-              <line x1="70" y1="130" x2="322" y2="300" stroke="#eff6ff" stroke-width="2" opacity="0.65"/>
-              <line x1="350" y1="130" x2="98" y2="300" stroke="#eff6ff" stroke-width="2" opacity="0.65"/>
-
-              <circle cx="210" cy="42" r="8" fill="#ffffff"/>
-              <circle cx="350" cy="130" r="8" fill="#ffffff"/>
-              <circle cx="322" cy="300" r="8" fill="#ffffff"/>
-              <circle cx="210" cy="378" r="8" fill="#ffffff"/>
-              <circle cx="98" cy="300" r="8" fill="#ffffff"/>
-              <circle cx="70" cy="130" r="8" fill="#ffffff"/>
-              <circle cx="210" cy="208" r="9" fill="#fef3c7"/>
-            </g>
+        <div class="math-board" aria-label="數學結構視覺">
+          <div class="board-title">Mathematical Structure</div>
+          <div class="formula-panel"><code>w(v)=f(v)+Σf(e)</code><p>Totally Graceful Labeling</p></div>
+          <svg class="graph-visual" viewBox="0 0 420 320" role="img" aria-label="圖論標號視覺">
+            <defs><filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.18"/></filter></defs>
+            <g stroke="#1e3a8a" stroke-width="3" fill="none" opacity="0.85"><line x1="90" y1="92" x2="210" y2="50"/><line x1="210" y1="50" x2="330" y2="92"/><line x1="330" y1="92" x2="300" y2="230"/><line x1="300" y1="230" x2="120" y2="230"/><line x1="120" y1="230" x2="90" y2="92"/><line x1="90" y1="92" x2="300" y2="230"/><line x1="330" y1="92" x2="120" y2="230"/></g>
+            <g filter="url(#softShadow)"><circle cx="90" cy="92" r="24" fill="#ffffff" stroke="#2563eb" stroke-width="3"/><circle cx="210" cy="50" r="24" fill="#ffffff" stroke="#2563eb" stroke-width="3"/><circle cx="330" cy="92" r="24" fill="#ffffff" stroke="#2563eb" stroke-width="3"/><circle cx="300" cy="230" r="24" fill="#ffffff" stroke="#2563eb" stroke-width="3"/><circle cx="120" cy="230" r="24" fill="#ffffff" stroke="#2563eb" stroke-width="3"/></g>
+            <g fill="#0f172a" font-size="18" font-weight="800" text-anchor="middle" dominant-baseline="middle"><text x="90" y="92">1</text><text x="210" y="50">4</text><text x="330" y="92">2</text><text x="300" y="230">7</text><text x="120" y="230">5</text></g>
+            <g fill="#dc2626" font-size="15" font-weight="800"><text x="56" y="64">w=12</text><text x="192" y="20">w=15</text><text x="336" y="64">w=16</text><text x="308" y="270">w=18</text><text x="76" y="270">w=14</text></g>
           </svg>
         </div>
       </div>
     </section>
-
-    <section id="about" class="about">
-      <div class="container about-grid">
-        <div class="profile-panel">
-          <div class="profile-card">
-            <div class="avatar">謝</div>
-            <h2>謝曜仲</h2>
-            <p>數學家教｜應用數學｜圖論研究</p>
-          </div>
-
-          <div class="mini-graph">
-            <span style="--x: 12%; --y: 44%">1</span>
-            <span style="--x: 38%; --y: 18%">2</span>
-            <span style="--x: 72%; --y: 34%">3</span>
-            <span style="--x: 60%; --y: 72%">4</span>
-            <span style="--x: 24%; --y: 76%">5</span>
-            <svg viewBox="0 0 300 220">
-              <line x1="36" y1="97" x2="114" y2="40"/>
-              <line x1="114" y1="40" x2="216" y2="75"/>
-              <line x1="216" y1="75" x2="180" y2="158"/>
-              <line x1="180" y1="158" x2="72" y2="167"/>
-              <line x1="72" y1="167" x2="36" y2="97"/>
-              <line x1="114" y1="40" x2="180" y2="158"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="about-text">
-          <span class="section-kicker">About</span>
-          <h2>把抽象數學，轉成學生能掌握的路徑</h2>
-          <p>
-            我擅長把數學中的定義、公式、證明與題型結構化，
-            讓學生不是被動記答案，而是逐步形成「看見條件 → 選擇方法 → 完成推理」的能力
-          </p>
-          <p>
-            對基礎弱的學生，我會先補定義與基本運算；對想衝高分的學生，
-            我會整理題型、速度與考場策略；對大學數學學生，則加強抽象思維與證明能力
-          </p>
-
-          <div class="highlight-list">
-            <div>✓ 國中、高中、大學數學皆可規劃</div>
-            <div>✓ 觀念補強、段考衝刺、考前整理</div>
-            <div>✓ 微積分、線性代數、圖論與證明訓練</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="feature-section">
-      <div class="container">
-        <div class="section-title">
-          <span>Teaching System</span>
-          <h2>專業化教學流程</h2>
-        </div>
-
-        <div class="cards">
-          <article class="card glass">
-            <div class="card-icon">01</div>
-            <h3>診斷弱點</h3>
-            <p>先判斷學生卡在定義、計算、題意、推理，還是考試策略，避免盲目刷題</p>
-          </article>
-
-          <article class="card glass">
-            <div class="card-icon">02</div>
-            <h3>重建觀念</h3>
-            <p>用圖像、例題、反例與步驟拆解，把抽象觀念轉成可以操作的解題方法</p>
-          </article>
-
-          <article class="card glass">
-            <div class="card-icon">03</div>
-            <h3>題型建模</h3>
-            <p>把常考題整理成固定判斷流程，讓學生知道題目出現時該從哪裡開始</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="research">
-      <div class="container research-grid">
-        <div>
-          <span class="section-kicker">Research</span>
-          <h2>論文專區</h2>
-          <p>
-            研究方向聚焦於圖論與標號問題，特別是 graceful labeling 與 totally graceful labeling
-            相關結構。此區可作為履歷、家教品牌與學術背景展示
-          </p>
-
-          <div class="research-actions">
-            <a class="btn btn-primary" href="https://ndltd.ncl.edu.tw/" target="_blank" rel="noopener">前往臺灣博碩士論文系統</a>
-            <a class="btn btn-secondary" href="https://ndltd.ncl.edu.tw/handle/87017171363493153009" target="_blank" rel="noopener">參考：優美標號相關論文</a>
-          </div>
-
-          <p class="research-note">
-            
-          </p>
-        </div>
-
-        <div class="paper-card">
-          <div class="paper-label">Master Thesis / Research</div>
-          <h3>Totally Graceful Labeling and Graph Structures</h3>
-          <p>
-            探討圖的點標號、邊標號與權重連續性問題，並分析特定圖族在標號條件下的結構特性
-          </p>
-
-          <div class="paper-meta">
-            <div>
-              <span>Field</span>
-              <strong>Graph Theory</strong>
-            </div>
-            <div>
-              <span>Topic</span>
-              <strong>Graph Labeling</strong>
-            </div>
-            <div>
-              <span>Advisor</span>
-              <strong>Tao-Ming Wang</strong>
-            </div>
-          </div>
-
-          <a class="paper-link" href="https://ndltd.ncl.edu.tw/" target="_blank" rel="noopener">
-            我的論文連結 →
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="plans" class="plans">
-      <div class="container">
-        <div class="section-title">
-          <span>Course Plans</span>
-          <h2>課程方案</h2>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>基礎補強班</h3>
-            <div class="price">觀念重建</div>
-            <ul>
-              <li>課本觀念重新整理</li>
-              <li>公式與定義補齊</li>
-              <li>適合基礎弱、長期準備</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">詢問課程</a>
-          </article>
-
-          <article class="card featured">
-            <h3>段考衝刺班</h3>
-            <div class="price">最受歡迎</div>
-            <ul>
-              <li>常考題型整理</li>
-              <li>快速補漏洞</li>
-              <li>考前練習與解題策略</li>
-            </ul>
-            <a class="btn btn-primary" href="#contact">預約試教</a>
-          </article>
-
-          <article class="card">
-            <h3>大學數學班</h3>
-            <div class="price">進階訓練</div>
-            <ul>
-              <li>微積分與線性代數</li>
-              <li>證明與抽象思維</li>
-              <li>圖論與離散數學輔導</li>
-            </ul>
-            <a class="btn btn-secondary" href="#contact">詢問課程</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="container">
-        <div class="section-title">
-          <span>Feedback</span>
-          <h2>學生回饋</h2>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <p class="quote">「老師會把題目拆得很清楚，原本我看到應用題會怕，現在比較知道要從哪裡開始」</p>
-            <div class="student">高中學生 A</div>
-          </article>
-
-          <article class="card">
-            <p class="quote">「不是一直叫我寫題目，而是會找出我真正不會的地方，讀起來比較有方向」</p>
-            <div class="student">國中學生 B</div>
-          </article>
-
-          <article class="card">
-            <p class="quote">「微積分以前只會套公式，後來才知道每個步驟背後的意思，考試穩很多」</p>
-            <div class="student">大學生 C</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>想讓數學變得更清楚？</h2>
-        <p>歡迎預約試教或詢問課程，我會依照學生程度規劃學習方向</p>
-
-        <div class="contact-box">
-          <div class="contact-info">
-            <div>📧 Email：handsomeboy784@gmail.com</div>
-            <div>📍 授課方式：線上 / 台中實體可討論</div>
-            <div>📘 課程對象：國中、高中、大學數學</div>
-          </div>
-
-          <a class="btn btn-light" href="mailto:handsomeboy784@gmail.com?subject=數學家教課程詢問">寄信預約</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© 2026 謝曜仲 Math Studio All Rights Reserved</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    <section id="teaching" class="section"><div class="container"><div class="section-heading"><p>Teaching Strength</p><h2>數學教學硬實力</h2><span>從定義、觀念、題型、證明到考試策略，建立可累積的數學能力</span></div><div class="grid three">
+      <article class="card"><span class="card-number">01</span><h3>觀念結構化</h3><p>把每一章整理成「定義 → 性質 → 例題 → 題型 → 易錯點」的學習路徑，讓學生知道自己正在學什麼</p></article>
+      <article class="card"><span class="card-number">02</span><h3>解題模型化</h3><p>將題目拆成條件辨識、方法選擇、計算執行與結果檢查，訓練學生面對新題目的判斷能力</p></article>
+      <article class="card"><span class="card-number">03</span><h3>錯因診斷</h3><p>不只訂正答案，而是分析錯誤來自觀念、運算、題意、符號、邏輯或考試節奏</p></article>
+      <article class="card"><span class="card-number">04</span><h3>證明訓練</h3><p>針對大學數學與進階學生，訓練定義使用、反例建構、歸納法、存在唯一性與邏輯推導</p></article>
+      <article class="card"><span class="card-number">05</span><h3>圖像化理解</h3><p>將函數、向量、矩陣、極限與圖論結構轉成視覺模型，降低抽象概念的理解門檻</p></article>
+      <article class="card"><span class="card-number">06</span><h3>學術銜接</h3><p>從高中數學銜接到微積分、線性代數、離散數學與圖論，幫助學生建立長期數學素養</p></article>
+    </div></div></section>
+    <section id="academic" class="section academic"><div class="container academic-grid"><div><div class="section-heading left"><p>Academic Foundation</p><h2>學術能力展示</h2><span>網站主軸放在數學能力、研究方向與教學深度，而不是單純招生文案</span></div><div class="skill-list"><div><strong>核心數學</strong><span>微積分、線性代數、離散數學、圖論</span></div><div><strong>研究方向</strong><span>Graph Labeling、Totally Graceful Labeling、Graph Structures</span></div><div><strong>教學方法</strong><span>觀念拆解、題型歸納、錯題診斷、證明訓練</span></div><div><strong>工具能力</strong><span>LaTeX、Python、數學視覺化、講義整理</span></div></div></div><div class="proof-box"><h3>Proof-Oriented Teaching</h3><div class="proof-step"><span>Definition</span><code>∀ε&gt;0, ∃δ&gt;0</code></div><div class="proof-step"><span>Structure</span><code>Assumption → Claim → Proof</code></div><div class="proof-step"><span>Graph Labeling</span><code>V(G), E(G), f, w(v)</code></div><div class="proof-step"><span>Conclusion</span><code>Consecutive integer weights</code></div></div></div></section>
+    <section id="research" class="section"><div class="container"><div class="section-heading"><p>Research & Thesis</p><h2>研究與論文專區</h2><span>用研究背景支撐教學專業，讓網站看起來像數學工作者，而不是普通家教頁</span></div><div class="research-layout"><article class="paper-card"><div class="paper-tag">Thesis</div><h3>Totally Graceful Labeling of Graphs</h3><p>研究主題聚焦於圖的點標號、邊標號與權重連續性問題。此區可以放置正式論文題目、摘要、指導教授、學校與下載連結</p><dl class="paper-meta"><div><dt>Field</dt><dd>Graph Theory</dd></div><div><dt>Topic</dt><dd>Graph Labeling</dd></div><div><dt>Method</dt><dd>Proof + Construction</dd></div></dl><div class="paper-actions"><a class="btn primary" href="https://ndltd.ncl.edu.tw/" target="_blank" rel="noopener">論文連結</a><a class="btn secondary" href="#materials">查看相關講義</a></div></article><article class="research-card"><h3>Research Interests</h3><ul><li>Graph Theory</li><li>Graph Labeling</li><li>Totally Graceful Labeling</li><li>Cycle Graphs and Combined Graph Structures</li><li>Discrete Mathematics Education</li></ul></article><article class="research-card"><h3>Academic Value in Teaching</h3><p>圖論研究訓練的是結構觀察、定義操作、案例建構與嚴謹證明。這些能力可以直接轉化為數學教學中的邏輯訓練與解題策略</p></article></div></div></section>
+    <section id="materials" class="section materials"><div class="container"><div class="section-heading"><p>Materials & Portfolio</p><h2>講義與數學作品</h2><span>這裡可以放教學講義、研究筆記、LaTeX 文件、Python 圖論工具與 GitHub 作品</span></div><div class="grid four"><article class="material-card"><h3>高中數學講義</h3><p>函數、三角、排列組合、機率、向量與空間概念</p><a href="#">Coming Soon</a></article><article class="material-card"><h3>微積分筆記</h3><p>極限、導數、積分、級數與 ε-δ 觀念整理</p><a href="#">Coming Soon</a></article><article class="material-card"><h3>線性代數筆記</h3><p>矩陣、向量空間、線性轉換、特徵值與對角化</p><a href="#">Coming Soon</a></article><article class="material-card"><h3>圖論研究筆記</h3><p>圖標號、圈圖、組合圖形與標號構造方法</p><a href="#">Coming Soon</a></article></div></div></section>
+    <section id="contact" class="contact"><div class="container contact-box"><p class="eyebrow">Contact</p><h2>數學教學與學術合作</h2><p>可洽詢數學教學、講義整理、圖論研究展示、學生課程規劃</p><div class="contact-info"><span>Email：handsomeboy784@gmail.com</span><span>Location：Taichung / Online</span><span>Focus：Mathematics Teaching & Graph Theory</span></div><a class="btn light" href="mailto:handsomeboy784@gmail.com?subject=數學教學與學術合作詢問">Email 聯絡</a></div></section>
+  </main><footer><div class="container">© 2026 謝曜仲 Mathematics. All Rights Reserved.</div></footer><script src="script.js"></script></body></html>
